@@ -1,0 +1,111 @@
+[gd_scene load_steps=4 format=3 uid="uid://dg0q5232s6edv"]
+
+[ext_resource type="Script" uid="uid://dd57egkiws5cu" path="res://MenuScreen/menu.gd" id="1_s3j26"]
+[ext_resource type="Texture2D" uid="uid://b4prcbn02yg0b" path="res://assets/Untitled.jpeg" id="2_uva4l"]
+[ext_resource type="AudioStream" uid="uid://d0a316dxwcuqi" path="res://assets/WhatsApp Audio 2025-10-18 at 3.11.05 PM.mp3" id="3_uva4l"]
+
+[node name="menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_s3j26")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1154.0
+offset_bottom = 648.0
+texture = ExtResource("2_uva4l")
+
+[node name="Jogar" type="Button" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 29.0
+offset_top = 400.0
+offset_right = 77.0
+offset_bottom = 431.0
+scale = Vector2(2, 2)
+text = "Jogar"
+flat = true
+alignment = 0
+
+[node name="Creditos" type="Button" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 23.0
+offset_top = 460.0
+offset_right = 96.0
+offset_bottom = 491.0
+scale = Vector2(2, 2)
+text = "Créditos"
+flat = true
+alignment = 0
+
+[node name="Sair" type="Button" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 25.0
+offset_top = 520.0
+offset_right = 73.0
+offset_bottom = 551.0
+scale = Vector2(2, 2)
+text = "Sair"
+flat = true
+alignment = 0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 375.0
+offset_top = 100.0
+offset_right = 775.0
+offset_bottom = 550.0
+color = Color(0.36157545, 0.36157548, 0.36157548, 1)
+
+[node name="Label" type="Label" parent="ColorRect"]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 20.0
+offset_right = 185.0
+offset_bottom = 43.0
+scale = Vector2(2.5, 2.5)
+text = "Créditos"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="ColorRect"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 105.0
+offset_right = 255.0
+offset_bottom = 265.0
+scale = Vector2(1.5, 1.5)
+text = "Heitor - Designer
+Pedro - Lider
+Christian - Dev
+Humberto - Dev
+Ethan - Dev
+Eduardo - Dev"
+
+[node name="Fechar" type="Button" parent="ColorRect"]
+layout_mode = 0
+offset_left = 150.0
+offset_top = 370.0
+offset_right = 210.0
+offset_bottom = 401.0
+scale = Vector2(1.5, 1.5)
+text = "Fechar"
+flat = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+auto_translate_mode = 1
+stream = ExtResource("3_uva4l")
+volume_db = 3.748
+autoplay = true
+
+[connection signal="pressed" from="Jogar" to="." method="_on_jogar_pressed"]
+[connection signal="pressed" from="Creditos" to="." method="_on_creditos_pressed"]
+[connection signal="pressed" from="Sair" to="." method="_on_sair_pressed"]
+[connection signal="pressed" from="ColorRect/Fechar" to="." method="_on_fechar_pressed"]
