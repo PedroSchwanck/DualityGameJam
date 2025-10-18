@@ -10,16 +10,6 @@ config_version=5
 
 [application]
 
-config/name="DualityGameJam"
-config/features=PackedStringArray("4.5", "GL Compatibility")
+config/name="DualityGame"
+config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
-
-[autoload]
-
-GS="*res://autoload/GameState.gd"
-CFG="*res://autoload/Settings.gd"
-
-[rendering]
-
-renderer/rendering_method="gl_compatibility"
-renderer/rendering_method.mobile="gl_compatibility"
