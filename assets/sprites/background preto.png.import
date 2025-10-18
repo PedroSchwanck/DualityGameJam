@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ciph37u2v6g81"
-path="res://.godot/imported/obstgamejamnoirsurblanchseet.png-17a4f67318609c4fe732ab8f2755c5a8.ctex"
+uid="uid://brck5iks1qlg"
+path="res://.godot/imported/background preto.png-1e532dbd974c2063ded0f7c6065da004.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/obstgamejamnoirsurblanchseet.png"
-dest_files=["res://.godot/imported/obstgamejamnoirsurblanchseet.png-17a4f67318609c4fe732ab8f2755c5a8.ctex"]
+source_file="res://assets/sprites/background preto.png"
+dest_files=["res://.godot/imported/background preto.png-1e532dbd974c2063ded0f7c6065da004.ctex"]
 
 [params]
 

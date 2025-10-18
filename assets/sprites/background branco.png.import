@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b83cgesl1w2fm"
-path="res://.godot/imported/noirsurblancksheet.png-f2f6461db06fd2c9ecd624024fed5a45.ctex"
+uid="uid://b4sbprs2mkqog"
+path="res://.godot/imported/background branco.png-a027bc87c3f0b31a367337fa4f268415.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/noirsurblancksheet.png"
-dest_files=["res://.godot/imported/noirsurblancksheet.png-f2f6461db06fd2c9ecd624024fed5a45.ctex"]
+source_file="res://assets/sprites/background branco.png"
+dest_files=["res://.godot/imported/background branco.png-a027bc87c3f0b31a367337fa4f268415.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bsncwo47towv4"
-path="res://.godot/imported/background_preto.png-85f157c7954127d4342a009850ecd064.ctex"
+uid="uid://d22vkyti86vn8"
+path="res://.godot/imported/menujam.png-49012f8f7e4eb40ecefd56f9414b8c5f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/background_preto.png"
-dest_files=["res://.godot/imported/background_preto.png-85f157c7954127d4342a009850ecd064.ctex"]
+source_file="res://assets/sprites/menujam.png"
+dest_files=["res://.godot/imported/menujam.png-49012f8f7e4eb40ecefd56f9414b8c5f.ctex"]
 
 [params]
 

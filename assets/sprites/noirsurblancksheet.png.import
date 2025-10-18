@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://box3y805g3g0f"
-path="res://.godot/imported/menujam.png-3a7f724eef9fae2f26d1747a4e04f198.ctex"
+uid="uid://dm87gnpop8oq7"
+path="res://.godot/imported/noirsurblancksheet.png-f8e4145c038afd290df50cd96a87de7f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/menujam.png"
-dest_files=["res://.godot/imported/menujam.png-3a7f724eef9fae2f26d1747a4e04f198.ctex"]
+source_file="res://assets/sprites/noirsurblancksheet.png"
+dest_files=["res://.godot/imported/noirsurblancksheet.png-f8e4145c038afd290df50cd96a87de7f.ctex"]
 
 [params]
 
