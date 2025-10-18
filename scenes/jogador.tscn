@@ -1,7 +1,13 @@
-[gd_scene load_steps=24 format=3 uid="uid://t5t5fs7nofuo"]
+[gd_scene load_steps=31 format=3 uid="uid://t5t5fs7nofuo"]
+
+[ext_resource type="Texture2D" uid="uid://dm87gnpop8oq7" path="res://assets/sprites/noirsurblancksheet.png" id="1_vwxko"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sa8d0"]
 size = Vector2(20, 43)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j8dhb"]
+atlas = ExtResource("1_vwxko")
+region = Rect2(1280, 0, 64, 64)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vwxko"]
 load_path = "res://.godot/imported/noirsurblancksheet.png-f8e4145c038afd290df50cd96a87de7f.ctex"
@@ -34,17 +40,21 @@ region = Rect2(448, 0, 64, 64)
 atlas = SubResource("CompressedTexture2D_vwxko")
 region = Rect2(512, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_8gwte"]
-atlas = SubResource("CompressedTexture2D_vwxko")
+[sub_resource type="AtlasTexture" id="AtlasTexture_lymcn"]
+atlas = ExtResource("1_vwxko")
 region = Rect2(0, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_jl1eh"]
-atlas = SubResource("CompressedTexture2D_vwxko")
+[sub_resource type="AtlasTexture" id="AtlasTexture_obj1g"]
+atlas = ExtResource("1_vwxko")
 region = Rect2(64, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_vvn6l"]
-atlas = SubResource("CompressedTexture2D_vwxko")
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ouku"]
+atlas = ExtResource("1_vwxko")
 region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sw1o0"]
+atlas = ExtResource("1_vwxko")
+region = Rect2(1344, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1lopk"]
 atlas = SubResource("CompressedTexture2D_vwxko")
@@ -70,6 +80,22 @@ region = Rect2(576, 0, 64, 64)
 atlas = SubResource("CompressedTexture2D_vwxko")
 region = Rect2(640, 0, 64, 64)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_mbqsc"]
+atlas = ExtResource("1_vwxko")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fxhjy"]
+atlas = ExtResource("1_vwxko")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h7dxu"]
+atlas = ExtResource("1_vwxko")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kyaju"]
+atlas = ExtResource("1_vwxko")
+region = Rect2(384, 0, 64, 64)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_nmdwb"]
 atlas = SubResource("CompressedTexture2D_vwxko")
 region = Rect2(192, 0, 64, 64)
@@ -88,7 +114,10 @@ region = Rect2(384, 0, 64, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_j8dhb"]
 animations = [{
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j8dhb")
+}],
 "loop": true,
 "name": &"1death",
 "speed": 5.0
@@ -126,19 +155,22 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_8gwte")
+"texture": SubResource("AtlasTexture_lymcn")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_jl1eh")
+"texture": SubResource("AtlasTexture_obj1g")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_vvn6l")
+"texture": SubResource("AtlasTexture_4ouku")
 }],
 "loop": true,
-"name": &"1walk",
-"speed": 5.0
+"name": &"1run",
+"speed": 20.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sw1o0")
+}],
 "loop": true,
 "name": &"2death",
 "speed": 5.0
@@ -173,6 +205,23 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_mbqsc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fxhjy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h7dxu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kyaju")
+}],
+"loop": true,
+"name": &"2run",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_nmdwb")
 }, {
 "duration": 1.0,
@@ -198,5 +247,5 @@ shape = SubResource("RectangleShape2D_sa8d0")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-1, -1)
 sprite_frames = SubResource("SpriteFrames_j8dhb")
-animation = &"2walk"
-frame_progress = 0.9283815
+animation = &"1death"
+autoplay = "1death"
