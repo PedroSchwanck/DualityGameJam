@@ -14,6 +14,11 @@ config/name="DualityGameJam"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GS="*res://autoload/GameState.gd"
+CFG="*res://autoload/Settings.gd"
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
